@@ -1,0 +1,12 @@
+const base = { width: 20, height: 20, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round" };
+export const SearchIcon = (p) => (<svg {...base} {...p}><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>);
+export const UserIcon = (p) => (<svg {...base} {...p}><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>);
+export const HeartIcon = ({ filled, ...p }) => (<svg {...base} {...p} fill={filled ? "currentColor" : "none"}><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg>);
+export const BagIcon = (p) => (<svg {...base} {...p}><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>);
+export const ArrowUR = (p) => (<svg {...base} width={12} height={12} strokeWidth={2} {...p}><path d="M7 17L17 7M8 7h9v9"/></svg>);
+export const ChevronL = (p) => (<svg {...base} width={16} height={16} {...p}><path d="M15 6l-6 6 6 6"/></svg>);
+export const ChevronR = (p) => (<svg {...base} width={16} height={16} {...p}><path d="M9 6l6 6-6 6"/></svg>);
+export const CloseIcon = (p) => (<svg {...base} {...p}><path d="M6 6l12 12M18 6L6 18"/></svg>);
+export const MenuIcon = (p) => (<svg {...base} {...p}><path d="M4 7h16M4 12h16M4 17h16"/></svg>);
+export const PlusIcon = (p) => (<svg {...base} width={16} height={16} {...p}><path d="M12 5v14M5 12h14"/></svg>);
+export const FlowerIcon = (p) => (<svg viewBox="0 0 120 60" width="120" height="60" fill="none" stroke="#1c1917" strokeWidth="1" {...p}><path d="M10 48c25-6 45-4 62-14M60 30c-8-18 14-26 20-14 12-6 24 6 12 16 6 10-8 18-18 10-8 6-20-2-14-12z"/><path d="M82 24c4 4 4 8 0 12M72 30c6-2 10 0 14 4"/></svg>);

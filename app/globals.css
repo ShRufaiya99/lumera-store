@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-ink font-sans antialiased; }
+.container-x { @apply mx-auto w-full max-w-[1280px] px-5 md:px-8; }
+.btn-pill { @apply inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-xs font-medium text-ink transition hover:bg-ink hover:text-white; }
+.btn-dark { @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-clay; }
+
+@keyframes heroZoom { from { transform: scale(1); } to { transform: scale(1.12); } }
+.hero-zoom { animation-name: heroZoom; animation-timing-function: linear; animation-fill-mode: forwards; }
