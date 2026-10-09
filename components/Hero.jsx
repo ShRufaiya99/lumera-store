@@ -32,7 +32,7 @@ export default function Hero() {
         const active = n === st.i;
         const zooming = active || n === st.prev; // outgoing slide stays fully visible and keeps zooming while the new one fades in on top: no dip, no snap-back
         return (
-          <div key={n} aria-hidden={!active} className="absolute inset-0" style={{ opacity: zooming ? 1 : 0, transition: active ? `opacity ${BANNER_FADE}ms ease-in-out` : "none", background: fallback[n % 3], zIndex: active ? 2 : n === st.prev ? 1 : 0 }}>
+          <div key={n} aria-hidden={!active} className="absolute inset-0" style={{ opacity: zooming ? 1 : 0, transition: active ? `opacity ${BANNER_FADE}ms linear` : "none", background: fallback[n % 3], zIndex: active ? 2 : n === st.prev ? 1 : 0 }}>
             <div
               key={`${n}-${st.gens[n]}`}
               className={`absolute inset-0 bg-cover bg-center will-change-transform ${zooming ? "hero-zoom" : ""}`}
